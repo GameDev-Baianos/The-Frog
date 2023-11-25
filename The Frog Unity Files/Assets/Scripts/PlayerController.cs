@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     private float ySpeed = 0.75f;
     private float xSpeed = 1.0f;
      private Vector2 moveDelta;
-
      private bool IsRolling = true;
 
     void Start()
@@ -36,8 +35,6 @@ public class PlayerController : MonoBehaviour
         float xInput = Input.GetAxisRaw("Horizontal");
         float yInput  = Input.GetAxisRaw("Vertical");
 
-
-
         moveDelta = new Vector2(xInput * xSpeed, yInput * ySpeed);
         moveDelta.Normalize();
 
@@ -48,6 +45,5 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("XInput", moveDelta.x);
         animator.SetFloat("YInput", moveDelta.y);
         animator.SetFloat("Magnitude", moveDelta.magnitude);
-        
     }
 }
