@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     private float ySpeed = 0.75f;
     private float xSpeed = 1.0f;
      private Vector2 moveDelta;
-     private bool IsRolling = true;
+     private bool IsAlive = true;
 
     void Start()
     {
@@ -20,16 +20,20 @@ public class PlayerController : MonoBehaviour
     
     void FixedUpdate()
     {
-        MoveCharacter(); 
+        if(IsAlive)
+        {
+            MoveCharacter();
+            Death();
+        }
     }
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && IsRolling)
+        if(Input.GetKeyDown(KeyCode.Space))
             animator.SetTrigger("IsRolling");
     }
 
-     void MoveCharacter()
+    void MoveCharacter()
     {
         // Movement Input
         float xInput = Input.GetAxisRaw("Horizontal");
@@ -42,8 +46,21 @@ public class PlayerController : MonoBehaviour
         rb.velocity = moveDelta * moveSpeed;
 
         // animation direction
-        animator.SetFloat("XInput", moveDelta.x);
-        animator.SetFloat("YInput", moveDelta.y);
+        if(xInput != 0 || yInput != 0)
+        {
+            animator.SetFloat("XInput", moveDelta.x);
+            animator.SetFloat("YInput", moveDelta.y);
+        }
+
         animator.SetFloat("Magnitude", moveDelta.magnitude);
+    }
+
+    void Death()
+    {
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            animator.SetBool("IsAlive", false);
+            IsAlive = false;
+        }
     }
 }
