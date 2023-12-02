@@ -9,17 +9,23 @@ public class PlayerController : MonoBehaviour
     [SerializeField ] private float moveSpeed;
     private float ySpeed = 0.75f;
     private float xSpeed = 1.0f;
-     private Vector2 moveDelta;
-     private bool IsAlive = true;
+    private Vector2 moveDelta;
+    private bool IsAlive = true;
+    float auxX = 0, auxY = -1;
 
-     [Header("Dash Settings")]
-     [SerializeField] float dashSpeed = 20f;
-     [SerializeField] float dashDuration = 0.25f;
-     [SerializeField] float dashCooldown = 1f;
-     bool isDashing = false;
-     bool canDash = true;
+    [Header("Dash Settings")]
+    [SerializeField] float dashSpeed = 20f;
+    [SerializeField] float dashDuration = 0.25f;
+    [SerializeField] float dashCooldown = 1f;
+    bool isDashing = false;
+    bool canDash = true;
 
-     float auxX = 0, auxY = -1;
+    [Header("HeavyAttack Settings")]
+    [SerializeField] float dashHAttack = 15f;
+    [SerializeField] float HADuration = 0.25f;
+    [SerializeField] float HACooldown = 1f;
+    bool isHAttacking = false;
+    bool canHAttack = true;
 
     void Start()
     {
@@ -29,7 +35,7 @@ public class PlayerController : MonoBehaviour
     
     void FixedUpdate()
     {
-        if(isDashing)
+        if(isDashing || isHAttacking)
             return;
             
         if(IsAlive)
@@ -46,6 +52,9 @@ public class PlayerController : MonoBehaviour
         
         if(Input.GetKeyDown(KeyCode.Space) && canDash)
             StartCoroutine(Dash());
+
+        if(Input.GetKeyDown(KeyCode.J) && canHAttack)
+            StartCoroutine(HeavyAttack());
     }
 
     void MoveCharacter()
@@ -95,5 +104,19 @@ public class PlayerController : MonoBehaviour
 
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;  
+    }
+
+    private IEnumerator HeavyAttack()
+    {
+        canHAttack = false;
+        isHAttacking = true;
+        animator.SetTrigger("IsAttacking");
+        yield return new WaitForSeconds(0.3f);
+        rb.velocity = new Vector2(auxX * dashHAttack, auxY * dashHAttack);
+        yield return new WaitForSeconds(HADuration);
+        isHAttacking = false;
+
+        yield return new WaitForSeconds(HACooldown);
+        canHAttack = true;  
     }
 }

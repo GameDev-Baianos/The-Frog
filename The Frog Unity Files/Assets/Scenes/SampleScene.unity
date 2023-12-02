@@ -300,6 +300,9 @@ MonoBehaviour:
   dashSpeed: 15
   dashDuration: 0.25
   dashCooldown: 1
+  dashHAttack: 20
+  HADuration: 0.1
+  HACooldown: 1
 --- !u!114 &1804420864
 MonoBehaviour:
   m_ObjectHideFlags: 0

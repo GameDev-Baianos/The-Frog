@@ -128,10 +128,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 256
-        width: 27
+        width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.34059426, y: 0.47509766}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -151,8 +151,8 @@ TextureImporter:
         y: 256
         width: 27
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.69183433, y: 0.47509766}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,12 +168,12 @@ TextureImporter:
       name: Heavy Sword Attack_2
       rect:
         serializedVersion: 2
-        x: 117
+        x: 121
         y: 256
-        width: 27
+        width: 17
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -189,12 +189,12 @@ TextureImporter:
       name: Heavy Sword Attack_3
       rect:
         serializedVersion: 2
-        x: 165
+        x: 178
         y: 256
-        width: 27
+        width: 14
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -202,6 +202,258 @@ TextureImporter:
       bones: []
       spriteID: 791bef78dec978f44ab89efc1b30518e
       internalID: -162451693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heavy Sword Attack_4
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e0f152e447fdb46aa93bc3781c773d
+      internalID: -1088147966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heavy Sword Attack_5
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 240
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 462908dea14481b42a8760ee88714146
+      internalID: -1906579828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heavy Sword Attack_6
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 240
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd76a79b47247042a458666f090ee37
+      internalID: 1411230243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heavy Sword Attack_7
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 240
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae740ee9563f39440bdfcf3a4f8556e7
+      internalID: -746279269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heavy Sword Attack_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b6230a294c6f044b268be7b3837a20
+      internalID: 453566946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heavy Sword Attack_9
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 204
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f70464d12d30c418f89cba75e27d80
+      internalID: 1224850160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heavy Sword Attack_10
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 199
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4cc8d2b3dd454479e19554103832f7
+      internalID: 776156356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heavy Sword Attack_11
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5fbc3647ee6f2b4084b3b58df5eec9d
+      internalID: 1790583283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heavy Sword Attack_12
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 192
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5000005, y: 0.4735403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba680b25d63ba8145964dc1b80411987
+      internalID: -1690347253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heavy Sword Attack_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 198
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9692afe4f845cf648b8f36b045534797
+      internalID: 1408636534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heavy Sword Attack_14
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 214
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc51e9bae55d4014dbd051aed101ec69
+      internalID: -1854412119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heavy Sword Attack_15
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 224
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b114a1bb12c3de642a58231bf84496cb
+      internalID: -738124805
       vertices: []
       indices: 
       edges: []
@@ -219,8 +471,20 @@ TextureImporter:
     nameFileIdTable:
       Heavy Sword Attack_0: 1678220943
       Heavy Sword Attack_1: -1160582853
+      Heavy Sword Attack_10: 776156356
+      Heavy Sword Attack_11: 1790583283
+      Heavy Sword Attack_12: -1690347253
+      Heavy Sword Attack_13: 1408636534
+      Heavy Sword Attack_14: -1854412119
+      Heavy Sword Attack_15: -738124805
       Heavy Sword Attack_2: -783961938
       Heavy Sword Attack_3: -162451693
+      Heavy Sword Attack_4: -1088147966
+      Heavy Sword Attack_5: -1906579828
+      Heavy Sword Attack_6: 1411230243
+      Heavy Sword Attack_7: -746279269
+      Heavy Sword Attack_8: 453566946
+      Heavy Sword Attack_9: 1224850160
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
