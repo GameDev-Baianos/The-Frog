@@ -20,6 +20,12 @@ public class PlayerController : MonoBehaviour
     bool isDashing = false;
     bool canDash = true;
 
+    [Header("LightAttack Settings")]
+    [SerializeField] float AttackDuration = 0.25f;
+    [SerializeField] float AttackCooldown = 1f;
+    bool isAttacking = false;
+    bool canAttack = true;
+
     [Header("HeavyAttack Settings")]
     [SerializeField] float dashHAttack = 15f;
     [SerializeField] float HADuration = 0.25f;
@@ -35,7 +41,7 @@ public class PlayerController : MonoBehaviour
     
     void FixedUpdate()
     {
-        if(isDashing || isHAttacking)
+        if(isDashing || isHAttacking || isAttacking)
             return;
             
         if(IsAlive)
@@ -53,8 +59,11 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && canDash)
             StartCoroutine(Dash());
 
-        if(Input.GetKeyDown(KeyCode.J) && canHAttack)
+        if(Input.GetKeyDown(KeyCode.K) && canHAttack)
             StartCoroutine(HeavyAttack());
+
+        if(Input.GetKeyDown(KeyCode.J) && canAttack)
+            StartCoroutine(Attack());
     }
 
     void MoveCharacter()
@@ -110,7 +119,7 @@ public class PlayerController : MonoBehaviour
     {
         canHAttack = false;
         isHAttacking = true;
-        animator.SetTrigger("IsAttacking");
+        animator.SetTrigger("HeavyAttack");
         yield return new WaitForSeconds(0.3f);
         rb.velocity = new Vector2(auxX * dashHAttack, auxY * dashHAttack);
         yield return new WaitForSeconds(HADuration);
@@ -118,5 +127,17 @@ public class PlayerController : MonoBehaviour
 
         yield return new WaitForSeconds(HACooldown);
         canHAttack = true;  
+    }
+
+    private IEnumerator Attack()
+    {
+        canAttack = false;
+        isAttacking = true;
+        animator.SetTrigger("LightAttack");
+        yield return new WaitForSeconds(AttackDuration);
+        isHAttacking = false;
+
+        yield return new WaitForSeconds(HACooldown);
+        canAttack = true;  
     }
 }
