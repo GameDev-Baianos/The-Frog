@@ -135,9 +135,9 @@ public class PlayerController : MonoBehaviour
         isAttacking = true;
         animator.SetTrigger("LightAttack");
         yield return new WaitForSeconds(AttackDuration);
-        isHAttacking = false;
+        isAttacking = false;
 
-        yield return new WaitForSeconds(HACooldown);
+        yield return new WaitForSeconds(AttackCooldown);
         canAttack = true;  
     }
 }
