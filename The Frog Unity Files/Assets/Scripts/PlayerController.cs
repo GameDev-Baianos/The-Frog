@@ -4,7 +4,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private Animator animator;
+    public Animator animator;
+    public static PlayerController instance;
 
     [SerializeField ] private float moveSpeed;
     private float ySpeed = 0.75f;
@@ -20,11 +21,20 @@ public class PlayerController : MonoBehaviour
     bool isDashing = false;
     bool canDash = true;
 
+    [Header("HeavyAttack Settings")]
+    [SerializeField] float dashHAttack = 15f;
+    [SerializeField] float HADuration = 0.25f;
+    [SerializeField] float HACooldown = 1f;
+    bool isHAttacking = false;
+    bool canHAttack = true;
+
     [Header("LightAttack Settings")]
-    [SerializeField] float AttackDuration = 0.25f;
-    [SerializeField] float AttackCooldown = 1f;
-    bool isAttacking = false;
-    bool canAttack = true;
+    public bool isAttacking = false;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     void Start()
     {
@@ -34,7 +44,7 @@ public class PlayerController : MonoBehaviour
     
     void FixedUpdate()
     {
-        if(isDashing || isAttacking)
+        if(isDashing || isAttacking || isHAttacking)
             return;
             
         if(IsAlive)
@@ -51,6 +61,11 @@ public class PlayerController : MonoBehaviour
         
         if(Input.GetKeyDown(KeyCode.Space) && canDash)
             StartCoroutine(Dash());
+
+        if(Input.GetKeyDown(KeyCode.K) && canHAttack)
+            StartCoroutine(HeavyAttack());
+
+        Attack();
     }
 
     void MoveCharacter()
@@ -89,6 +104,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void Attack()
+    {
+        if(Input.GetKeyDown(KeyCode.J) && !isAttacking)
+        {
+            isAttacking = true;
+        }
+    }
+    
     private IEnumerator Dash()
     {
         canDash = false;
@@ -100,5 +123,19 @@ public class PlayerController : MonoBehaviour
 
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;  
+    }
+    
+    private IEnumerator HeavyAttack()
+    {
+        canHAttack = false;
+        isHAttacking = true;
+        animator.SetTrigger("HeavyAttack");
+        yield return new WaitForSeconds(0.3f);
+        rb.velocity = new Vector2(auxX * dashHAttack, auxY * dashHAttack);
+        yield return new WaitForSeconds(HADuration);
+        isHAttacking = false;
+
+        yield return new WaitForSeconds(HACooldown);
+        canHAttack = true;  
     }
 }
