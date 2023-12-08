@@ -296,15 +296,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34fbc21b3dd7e204b813cfe0d50baf0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   moveSpeed: 5
   dashSpeed: 15
   dashDuration: 0.25
   dashCooldown: 1
-  AttackDuration: 0.4
-  AttackCooldown: 0.05
-  dashHAttack: 20
-  HADuration: 0.1
-  HACooldown: 1
+  dashHAttack: 15
+  HADuration: 0.55
+  isHAttacking: 0
+  isAttacking: 0
 --- !u!114 &1804420864
 MonoBehaviour:
   m_ObjectHideFlags: 0

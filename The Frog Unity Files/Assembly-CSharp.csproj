@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\IdleScript.cs" />
     <Compile Include="Assets\Scripts\transition2Script.cs" />
+    <Compile Include="Assets\Scripts\HAScript.cs" />
     <Compile Include="Assets\Scripts\transition1Script.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />

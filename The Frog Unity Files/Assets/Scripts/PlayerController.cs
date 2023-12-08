@@ -24,9 +24,7 @@ public class PlayerController : MonoBehaviour
     [Header("HeavyAttack Settings")]
     [SerializeField] float dashHAttack = 15f;
     [SerializeField] float HADuration = 0.25f;
-    [SerializeField] float HACooldown = 1f;
-    bool isHAttacking = false;
-    bool canHAttack = true;
+    public bool isHAttacking = false;
 
     [Header("LightAttack Settings")]
     public bool isAttacking = false;
@@ -62,9 +60,7 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && canDash)
             StartCoroutine(Dash());
 
-        if(Input.GetKeyDown(KeyCode.K) && canHAttack)
-            StartCoroutine(HeavyAttack());
-
+        StartCoroutine(HeavyAttack());
         Attack();
     }
 
@@ -127,15 +123,12 @@ public class PlayerController : MonoBehaviour
     
     private IEnumerator HeavyAttack()
     {
-        canHAttack = false;
-        isHAttacking = true;
-        animator.SetTrigger("HeavyAttack");
-        yield return new WaitForSeconds(0.3f);
-        rb.velocity = new Vector2(auxX * dashHAttack, auxY * dashHAttack);
-        yield return new WaitForSeconds(HADuration);
-        isHAttacking = false;
-
-        yield return new WaitForSeconds(HACooldown);
-        canHAttack = true;  
+        if(Input.GetKeyDown(KeyCode.K) && !isHAttacking)
+        {
+            isHAttacking = true;
+            yield return new WaitForSeconds(0.3f);
+            rb.velocity = new Vector2(auxX * dashHAttack, auxY * dashHAttack);
+            yield return new WaitForSeconds(HADuration);
+        }
     }
 }
