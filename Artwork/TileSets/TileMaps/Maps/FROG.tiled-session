@@ -1,0 +1,65 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "C:/Users/victo/OneDrive/Documentos/Desenhos/The frog/TileSets/TileMaps/Playground.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "exportAsImage.useCurrentScale": false,
+    "file.lastUsedOpenFilter": "Todos os Ficheiros (*)",
+    "fileStates": {
+        "C:/Users/victo/OneDrive/Documentos/Desenhos/The frog/TileSets/TileMaps/Maps/Playground.tmx": {
+            "scale": 0.4638671875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": -129.34736842105258,
+                "y": -126.11368421052629
+            }
+        },
+        "C:/Users/victo/OneDrive/Documentos/Desenhos/The frog/TileSets/TileMaps/Maps/STONE.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/victo/OneDrive/Documentos/Desenhos/The frog/TileSets/TileMaps/Playground.tmx": {
+            "scale": 3,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": -49,
+                "y": -49.33333333333333
+            }
+        },
+        "C:/Users/victo/OneDrive/Documentos/Desenhos/The frog/mapDesigns/STONE.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1
+        },
+        "STONE.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.externalTilesetPath": "C:/Users/victo/OneDrive/Documentos/Desenhos/The frog/TileSets/TileMaps/Maps",
+    "last.imagePath": "C:/Users/victo/OneDrive/Documentos/Desenhos/The frog/TileSets/TileMaps",
+    "map.fixedSize": false,
+    "map.lastUsedFormat": "tmx",
+    "map.layerDataFormat": null,
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "openFiles": [
+        "C:/Users/victo/OneDrive/Documentos/Desenhos/The frog/TileSets/TileMaps/Playground.tmx"
+    ],
+    "project": "FROG.tiled-project",
+    "recentFiles": [
+        "C:/Users/victo/OneDrive/Documentos/Desenhos/The frog/TileSets/TileMaps/Maps/Playground.tmx",
+        "C:/Users/victo/OneDrive/Documentos/Desenhos/The frog/TileSets/TileMaps/Maps/STONE.tsx",
+        "C:/Users/victo/OneDrive/Documentos/Desenhos/The frog/TileSets/TileMaps/Playground.tmx",
+        "STONE.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}
