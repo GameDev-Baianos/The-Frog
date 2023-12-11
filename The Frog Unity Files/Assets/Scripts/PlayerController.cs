@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Dash Settings")]
     [SerializeField] float dashSpeed = 20f;
-    [SerializeField] float dashDuration = 0.25f;
+    [SerializeField] float dashDuration = 0.5f;
     [SerializeField] float dashCooldown = 1f;
     bool isDashing = false;
     bool canDash = true;
@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
         if(IsAlive)
         {
             MoveCharacter();
-            Death();
+            //Death();
         }
     }
 
@@ -57,9 +57,7 @@ public class PlayerController : MonoBehaviour
         if(isDashing)
             return;
         
-        if(Input.GetKeyDown(KeyCode.Space) && canDash)
-            StartCoroutine(Dash());
-
+        StartCoroutine(Dash());
         StartCoroutine(HeavyAttack());
         Attack();
     }
@@ -91,6 +89,7 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Magnitude", moveDelta.magnitude);
     }
 
+/*
     private void Death()
     {
         if(Input.GetKeyDown(KeyCode.E))
@@ -99,6 +98,7 @@ public class PlayerController : MonoBehaviour
             IsAlive = false;
         }
     }
+    */
 
     void Attack()
     {
@@ -110,15 +110,18 @@ public class PlayerController : MonoBehaviour
     
     private IEnumerator Dash()
     {
-        canDash = false;
-        isDashing = true;
-        rb.velocity = new Vector2(auxX * dashSpeed, auxY * dashSpeed);
-        animator.SetTrigger("IsRolling");
-        yield return new WaitForSeconds(dashDuration);
-        isDashing = false;
+        if(Input.GetKeyDown(KeyCode.Space) && canDash)
+        {
+            canDash = false;
+            isDashing = true;
+            rb.velocity = new Vector2(auxX * dashSpeed, auxY * dashSpeed);
+            animator.SetTrigger("IsRolling");
+            yield return new WaitForSeconds(dashDuration);
+            isDashing = false;
 
-        yield return new WaitForSeconds(dashCooldown);
-        canDash = true;  
+            yield return new WaitForSeconds(dashCooldown);
+            canDash = true;  
+        }
     }
     
     private IEnumerator HeavyAttack()
@@ -129,6 +132,7 @@ public class PlayerController : MonoBehaviour
             yield return new WaitForSeconds(0.3f);
             rb.velocity = new Vector2(auxX * dashHAttack, auxY * dashHAttack);
             yield return new WaitForSeconds(HADuration);
+            isHAttacking = false;
         }
     }
 }

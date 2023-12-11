@@ -28,7 +28,6 @@ public class IdleScript : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         PlayerController.instance.isAttacking = false;
-        PlayerController.instance.isHAttacking = false;
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
