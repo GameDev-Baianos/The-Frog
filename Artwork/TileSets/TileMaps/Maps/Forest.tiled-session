@@ -1,0 +1,53 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "Forest.tmx",
+    "expandedProjectPaths": [
+    ],
+    "file.lastUsedOpenFilter": "Todos os Ficheiros (*)",
+    "fileStates": {
+        "": {
+            "scaleInDock": 1
+        },
+        "Flora.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Forest.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": -0.6666666666666288,
+                "y": 64
+            }
+        },
+        "STONE.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.externalTilesetPath": "C:/Users/victo/OneDrive/Documentos/Desenhos/The frog/TileSets/TileMaps/Maps",
+    "last.imagePath": "C:/Users/victo/OneDrive/Documentos/Desenhos/The frog/TileSets/TileMaps",
+    "map.fixedSize": false,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "openFiles": [
+        "Forest.tmx",
+        "Flora.tsx",
+        "STONE.tsx"
+    ],
+    "project": "Forest.tiled-project",
+    "recentFiles": [
+        "STONE.tsx",
+        "Flora.tsx",
+        "Forest.tmx"
+    ],
+    "tileset.lastUsedFilter": "Ficheiros de conjunto de blocos Tiled (*.tsx *.xml)",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}
