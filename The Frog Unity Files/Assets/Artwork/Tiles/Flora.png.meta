@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b7363b7f113e4f44fa4c44ae113a0ec6
+guid: 1c5e71cb4f7026a498b7f964e08e9b4c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,7 +121,49 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Flora_0
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 256
+        width: 76
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f776ef28c9416428e9e178eeab3489
+      internalID: -680274685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flora_1
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 193
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d17eb3a3b8126ab488de1c1380925e0d
+      internalID: -256002990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +174,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Flora_0: -680274685
+      Flora_1: -256002990
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
