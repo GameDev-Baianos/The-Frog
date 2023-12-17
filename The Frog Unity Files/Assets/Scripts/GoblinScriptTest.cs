@@ -1,45 +1,36 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GoblinScriptTest : MonoBehaviour
 {
-
-    private Rigidbody2D rb;
+    public GameObject player;
     public Animator animator;
-    private Vector2 moveDelta;
-    private float xSpeed = 1.0f;
-    [SerializeField ] private float moveSpeed;
+    public float speed;
+   
 
-    // Start is called before the first frame update
+    private float distance;
+
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        MoveCharacter();
-    }
-
-    void MoveCharacter()
-    {
-        // Movement Input
-        float xInput = Input.GetAxisRaw("Horizontal");
-
-        moveDelta = new Vector2(xInput * xSpeed, 0);
-        moveDelta.Normalize();
- 
-        rb.velocity = moveDelta * moveSpeed;
+        distance = Vector2.Distance(transform.position, player.transform.position);
+        Vector2 direction = player.transform.position - transform.position;
+        direction.Normalize();
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
         // animation direction
-        if(xInput != 0)
+        if(direction.x != 0 || direction.y != 0)
         {
-            animator.SetFloat("XWalking", moveDelta.x);
+            animator.SetFloat("XInput", direction.x);
         }
 
-        animator.SetFloat("Magnitude", moveDelta.magnitude);
+        if(distance < 10)
+        {
+            transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
+            transform.rotation = Quaternion.Euler(Vector3.forward * angle);
+        }
     }
 }
