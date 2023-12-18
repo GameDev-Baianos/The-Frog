@@ -16,11 +16,14 @@
             "scaleInEditor": 1
         },
         "Forest.tmx": {
+            "expandedGroupLayers": [
+                21
+            ],
             "scale": 1.5,
-            "selectedLayer": 0,
+            "selectedLayer": 5,
             "viewCenter": {
-                "x": -0.6666666666666288,
-                "y": 64
+                "x": 2.6666666666666288,
+                "y": 194.66666666666669
             }
         },
         "STONE.tsx": {
@@ -35,15 +38,13 @@
     "map.tileHeight": 16,
     "map.tileWidth": 16,
     "openFiles": [
-        "Forest.tmx",
-        "Flora.tsx",
-        "STONE.tsx"
+        "Forest.tmx"
     ],
     "project": "Forest.tiled-project",
     "recentFiles": [
-        "STONE.tsx",
+        "Forest.tmx",
         "Flora.tsx",
-        "Forest.tmx"
+        "STONE.tsx"
     ],
     "tileset.lastUsedFilter": "Ficheiros de conjunto de blocos Tiled (*.tsx *.xml)",
     "tileset.tileSize": {
