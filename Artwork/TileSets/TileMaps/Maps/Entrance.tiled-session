@@ -1,0 +1,37 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "Entrance.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "Entrance.tmx": {
+            "scale": 3,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": -75,
+                "y": 434.33333333333326
+            }
+        },
+        "Flora.tsx": {
+            "scaleInDock": 1
+        },
+        "STONE.tsx": {
+            "scaleInDock": 1
+        }
+    },
+    "map.fixedSize": false,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "openFiles": [
+        "Entrance.tmx"
+    ],
+    "project": "Entrance.tiled-project",
+    "recentFiles": [
+        "Entrance.tmx"
+    ]
+}

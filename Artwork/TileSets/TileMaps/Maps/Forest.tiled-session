@@ -3,13 +3,21 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "Forest.tmx",
+    "activeFile": "",
     "expandedProjectPaths": [
     ],
     "file.lastUsedOpenFilter": "Todos os Ficheiros (*)",
     "fileStates": {
         "": {
             "scaleInDock": 1
+        },
+        "Crocodile.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Fishes.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Flora.tsx": {
             "scaleInDock": 1,
@@ -19,12 +27,15 @@
             "expandedGroupLayers": [
                 21
             ],
-            "scale": 1.5,
-            "selectedLayer": 5,
+            "scale": 3,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 2.6666666666666288,
-                "y": 194.66666666666669
+                "x": 98,
+                "y": 362
             }
+        },
+        "Forest.tmx#Flora": {
+            "scaleInEditor": 1
         },
         "STONE.tsx": {
             "scaleInDock": 1,
@@ -32,21 +43,23 @@
         }
     },
     "last.externalTilesetPath": "C:/Users/victo/OneDrive/Documentos/Desenhos/The frog/TileSets/TileMaps/Maps",
-    "last.imagePath": "C:/Users/victo/OneDrive/Documentos/Desenhos/The frog/TileSets/TileMaps",
+    "last.imagePath": "C:/Users/victo/OneDrive/Documentos/Desenhos/The frog/Characters/Non-Interactive Characters",
     "map.fixedSize": false,
     "map.lastUsedFormat": "tmx",
     "map.tileHeight": 16,
     "map.tileWidth": 16,
     "openFiles": [
-        "Forest.tmx"
     ],
     "project": "Forest.tiled-project",
     "recentFiles": [
+        "Crocodile.tsx",
         "Forest.tmx",
+        "Fishes.tsx",
         "Flora.tsx",
         "STONE.tsx"
     ],
     "tileset.lastUsedFilter": "Ficheiros de conjunto de blocos Tiled (*.tsx *.xml)",
+    "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
         "height": 16,
         "width": 16
