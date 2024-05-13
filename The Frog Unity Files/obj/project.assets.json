@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\arthu\\OneDrive\\Documentos\\Unity Files\\FrogTower\\Assembly-CSharp.csproj",
+      "projectUniqueName": "C:\\Users\\arthu\\OneDrive\\Documentos\\GIT\\The-Frog\\The Frog Unity Files\\Assembly-CSharp.csproj",
       "projectName": "Assembly-CSharp",
-      "projectPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\Unity Files\\FrogTower\\Assembly-CSharp.csproj",
+      "projectPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\GIT\\The-Frog\\The Frog Unity Files\\Assembly-CSharp.csproj",
       "packagesPath": "C:\\Users\\arthu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\Unity Files\\FrogTower\\obj\\",
+      "outputPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\GIT\\The-Frog\\The Frog Unity Files\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\arthu\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "FrogTower.sln"
+    "dotnet.defaultSolution": "The Frog Unity Files.sln"
 }
